@@ -3,33 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f2f4ed">
+    <meta name="theme-color" content="#f3f7ff">
     <title>WLiT Calculator</title>
     <link rel="stylesheet" href="styles.css">
     <script src="calculator.js" defer></script>
   </head>
   <body>
     <main class="page-shell">
-      <header class="topbar" aria-label="Page header">
-        <a class="wordmark" href="./" aria-label="WLiT Calculator home">
-          <span class="wordmark-mark" aria-hidden="true">+</span>
-          <span>WLiT <span class="wordmark-light">CALCULATOR</span></span>
-        </a>
-        <span class="topbar-note">INSTRUMENT NO. 01</span>
+      <header class="page-heading">
+        <span class="heading-mark" aria-hidden="true">+</span>
+        <h1 id="page-title">WLiT <span>Calculator</span></h1>
       </header>
 
       <section class="calculator-layout" aria-labelledby="page-title">
-        <div class="intro">
-          <p class="eyebrow"><span class="status-dot"></span> EVERYDAY ARITHMETIC</p>
-          <h1 id="page-title">Make it<br><span>add up.</span></h1>
-          <p class="intro-index">01 <span>/</span> 01</p>
-        </div>
-
         <section class="calculator" aria-label="Calculator">
-          <div class="calculator-topline">
-            <span>CALCULATOR</span>
-            <span class="live-indicator"><span></span> READY</span>
-          </div>
           <div class="display" aria-live="polite" aria-atomic="true">
             <div class="expression" id="expression" aria-label="Expression">&nbsp;</div>
             <output class="result" id="result" aria-label="Display">0</output>
@@ -61,16 +48,10 @@
             <button class="key key-equals" data-action="equals" aria-label="Equals">=</button>
           </div>
           <footer class="calculator-footer">
-            <span>WLIT / 2026</span>
             <button class="delete-key" data-action="delete" aria-label="Delete last character">DEL</button>
           </footer>
         </section>
       </section>
-
-      <footer class="page-footer">
-        <span>PRECISION IN THE SMALL THINGS.</span>
-        <span>EST. 01</span>
-      </footer>
     </main>
   </body>
 </html>
